@@ -140,7 +140,7 @@ class ElementNode(HamlNode):
         if current_tag_content == None:
             current_tag_content = ''
         if self.django_variable:
-            current_tag_content = "{{ " + current_tag_content.strip() + " }}"
+            current_tag_content = "${ " + current_tag_content.strip() + " }"
         return current_tag_content
 
 
@@ -197,9 +197,9 @@ class TagNode(HamlNode):
     
     def render(self):
         internal = self.render_internal_nodes()
-        output = "%s{%% %s %%}\n%s" % (self.spaces, self.tag_statement, internal)
+        output = "%s%% %s:\n%s" % (self.spaces, self.tag_statement, internal)
         if (self.tag_name in self.self_closing.keys()):
-            output += '%s{%% %s %%}' % (self.spaces, self.self_closing[self.tag_name])
+            output += '%s%% %s:' % (self.spaces, self.self_closing[self.tag_name])
         return output
     
     def should_contain(self, node):
