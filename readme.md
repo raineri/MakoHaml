@@ -2,8 +2,6 @@
 
 Based on HamlPy, MakoHaml compiles Haml templates down to Mako templates.
 
-But wait, what is Haml?  Haml is an incredible template engine written in Ruby used a lot in the Rails community.  You can read more about it [here](http://www.haml-lang.com "Haml Home")
-
 Still under construction.
 
 ## Syntax
