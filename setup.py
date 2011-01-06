@@ -1,16 +1,16 @@
 from setuptools import setup
 
-setup(name='hamlpy',
+setup(name='makohaml',
       version = '0.1',
-      packages = ['hamlpy'],
-      author = 'Jesse Miller',
-      author_email = 'millerjesse@gmail.com',
-      description = 'HAML like syntax for Django templates',
-      keywords = 'haml django converter',
-      url = 'http://github.com/jessemiller/HamlPy',
+      packages = ['makohaml'],
+      author = 'Jesse Miller, Raineri Bello',
+      author_email = 'raineri.bello@gmail.com',
+      description = 'HAML like syntax for Mako templates',
+      keywords = 'haml mako converter',
+      url = 'http://github.com/raineri/MakoHaml',
       
       entry_points = {
-          'console_scripts' : ['hamlpy = hamlpy.hamlpy:convert_files',
-                               'hamlpy-watcher = hamlpy.hamlpy_watcher:watch_folder']
+          'console_scripts' : ['makohaml = makohaml.makohaml:convert_files',
+                               'makohaml-watcher = makohaml.makohaml_watcher:watch_folder']
       }
     )
