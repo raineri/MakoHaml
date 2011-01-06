@@ -181,8 +181,8 @@ class VariableNode(ElementNode):
 class TagNode(HamlNode):
     self_closing = {'for':'endfor',
                     'if':'endif',
-					'while':'endwhile',
-					'block':'endblock',
+                    'while':'endwhile',
+                    'block':'endblock',
                     'filter':'endfilter',
                     'autoescape':'endautoescape',
                     }
