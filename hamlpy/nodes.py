@@ -199,7 +199,7 @@ class TagNode(HamlNode):
         internal = self.render_internal_nodes()
         output = "%s%% %s:\n%s" % (self.spaces, self.tag_statement, internal)
         if (self.tag_name in self.self_closing.keys()):
-            output += '%s%% %s:' % (self.spaces, self.self_closing[self.tag_name])
+            output += '%s%% %s' % (self.spaces, self.self_closing[self.tag_name])
         return output
     
     def should_contain(self, node):
