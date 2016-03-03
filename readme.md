@@ -42,13 +42,6 @@ turns into..
 		{% endfor %}
 	</ul>
 	
-## Reference
 
-Check out the [reference.md](http://github.com/jessemiller/HamlPy/blob/master/reference.md "HamlPy Reference") for a complete reference and more examples.
 
-## Status
-
-HamlPy currently cannot:
-
-- Do variable interpolation.  So there is currently no way to go `%p This is some cool #{coolThing.text}`.
 
